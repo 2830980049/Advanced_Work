@@ -2,6 +2,7 @@ package com.edu.Servlet;
 
 import com.edu.domain.Book;
 import com.edu.domain.Book_type;
+import com.sun.glass.ui.Application;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
@@ -39,6 +40,9 @@ public class AddBook_Servlet extends HttpServlet {
                     String uuidFileName = getFileName(fileName);
                     InputStream is = fileItem.getInputStream();
                     String path = req.getSession().getServletContext().getRealPath("/")+"img\\";
+                    String path1 = Application.class.getResource("Application.class")
+                            .toString();
+                    System.out.println("path1 = "+path1);
                     //"F:\\IDEA Files\\Advanced_Work\\src\\main\\webapp\\img\\"
                     //String filePaths = realPath + "upload/"+ file.getOriginalFilename();
                     System.out.println(path);

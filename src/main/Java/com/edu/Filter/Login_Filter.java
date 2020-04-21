@@ -16,8 +16,6 @@ public class Login_Filter implements Filter {
         init_Pages.add("/login.jsp");
     }
 
-
-
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest)servletRequest;
@@ -56,6 +54,7 @@ public class Login_Filter implements Filter {
             return;
         }
     }
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 
