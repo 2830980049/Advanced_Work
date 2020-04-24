@@ -67,7 +67,7 @@
     </div>
 </section>
 <footer>
-    copy@慕课网
+    Create By WuQiLi
 </footer>
 </body>
 </html>
